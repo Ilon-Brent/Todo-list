@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1688dedd75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Todo list</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_headline">
+                <h1>
+                    Todo list  / Список задач
+                </h1>
+            </div>
+        </div>    
+    </header>
+    <section id="main_section">
+        <div class="container">
+            <div class="main_content_headline">
+                <h2>
+                    add your affairs and do them on time / 
+                    добавь свои дела и делай их вовремя
+                </h2>
+            </div>
+            <div class="main_content">
+                <div class="main_content_add_task_block">
+                    <input type="text" placeholder=" add task / добавить задачу" id="inputText">
+                    <button id="addTask"> add task</button>
+                </div>  
+                <div class="main_content_task_list">
+                    <ul id="todoText">
+                        <li><span class="todoSpan">task 1 / задача 1</span><span class="todoDelete"><i class="fas fa-backspace"></i></span></li>
+                    </ul>
+                </div>
+                <div class="main_content_buttons">
+                    <button class="main_content_buttons_item" id="saveAll">save</button>
+                    <button class="main_content_buttons_item" id="clearAll"> clear all</button>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
